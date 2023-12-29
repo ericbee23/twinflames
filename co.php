@@ -33,11 +33,11 @@ if(isset($_POST["submit"])) {
         } 
             else {
                 header('Location: failedtest.php?error=' . urlencode($mail->ErrorInfo));
-                exit(); // Make sure to exit after sending the header
+                exit(); 
             }
         } else {
             header('Location: failedtest.php?error=fields');
-            exit(); // Make sure to exit after sending the header
+            exit();
         }
     }
 ?>
